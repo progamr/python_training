@@ -1,8 +1,9 @@
 # Exception Handling
 
-content = open('xline')
 try:
+    content = open('xline')
     for line in content.readlines():
         print(line)
-except():
-    print('')
+except IOError as e:
+    print('something bad happened {}'.format(e))
+print('completing our code after the bad thing !')
