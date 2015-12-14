@@ -1,0 +1,2 @@
+def mainfunc():
+    print('eee')
